@@ -1,13 +1,25 @@
 from tkinter import *
 
-root = Tk()
-root.geometry("800x800")
-root.title("Asian Country Capitals Quiz")
 
-headingLabel = Label(root, text="Capitals Quiz" , font=("Calibri", 30))
-headingLabel.grid(row=0, column=0)
+Button_text = ("Arial", 40, "bold")
+subtitle_text = ("Arial", 20)
+Title_text = ("Arial", 50)
 
 
+def start_menu ():
+    startmenu = Tk()
+    startmenu.title("Welcome To The Asian Countries Capital Quiz")
+    startmenu.size(width=1000, height = 600)
+    startmenu.config(bg = "#C1E1C1")
+    menu = TkLabel(startmenu, text = ("Welcome To The Asian Countries Capital Quiz"),
+                   colour = "#4263f5" ,
+                   background_colour = "#C1E1C1",
+                   font = Title_text)
+    menu.place(x=150, y=20)
+    
 
 
-root.mainloop()
+
+
+
+start_menu.mainloop()
