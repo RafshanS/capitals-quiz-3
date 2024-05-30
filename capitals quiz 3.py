@@ -1,6 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
-
 
 questions = ["What is the capital of France?",
              "What is the capital of Spain?", 
@@ -34,10 +32,12 @@ def learn():
     learn_window.geometry("800x800")
     learn_window.configure(bg='#856ff8')
     learn_title= tk.Label(root, text="Learn the Capitals Here", font=title_font, bg='#856ff8', fg='white')
+    learn_title.place(x=50,y=70)
     quit_button = tk.Button(learn_window, text="Quit", command=quit, font=button_font, bg='#4a7abc', fg='yellow', activebackground='green', activeforeground='white')
     quit_button.place(x=50,y=500)
     menu_button = tk.Button(learn_window, text="Main Menu", command=lambda: [learn_window.destroy(), root.deiconify()], font=button_font, bg='#4a7abc', fg='yellow', activebackground='green', activeforeground='white')
     menu_button.place(x=50,y=400)
+    
    
     
     
